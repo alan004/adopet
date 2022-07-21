@@ -8,4 +8,9 @@
     border: none;
     padding: 1rem;
     margin-top: .5rem;
+    
+}
+
+.formulario__textarea::placeholder {
+    color: var(--cinza-medio);
 }

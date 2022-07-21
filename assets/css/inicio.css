@@ -7,5 +7,6 @@
     text-align: center;
     margin-top: 6rem;
     color: #FFFF;
+    height: calc(100vh - 15rem);
 } 
 

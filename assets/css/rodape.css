@@ -9,6 +9,5 @@
     z-index: 1;
     max-height: 100px;
     position: absolute;
-    bottom: 0;
     width: calc(100vw - 3rem);
 }

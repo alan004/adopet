@@ -8,6 +8,7 @@
 @import url(./cabecalho/cabecalho__menu.css);
 @import url(./cabecalho/cabecalho__menu--itemUser.css);
 @import url(./cabecalho/cabecalho__menu--logo.css);
+@import url(./texto__introdução.css);
 @import url(./conteudo.css);
 @import url(./rodape.css);
 
@@ -40,6 +41,7 @@
 @import url(./formulario/formulario__loggedout--botao.css);
 @import url(./formulario/formulario__loggedout--campo.css);
 @import url(./formulario/formulario__loggedout--input.css);
+@import url(./mensagem.css);
 
 /* pagina cadastro*/
 @import url(./cadastro.css);
@@ -65,3 +67,5 @@
 @import url(./animais/animal__local.css);
 @import url(./animais/animal__mensagem.css);
 @import url(./animais/animal__mensagem--texto.css);
+
+
