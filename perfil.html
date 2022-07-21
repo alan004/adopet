@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Adopet</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <body class="mensagem">
+        <header>
+            <div class="forma__topo"></div>
+            <nav class="cabecalho container">
+                <ul class="cabecalho__menu" id="logado">
+                    <li class="cabecalho__menu--item"><a href="./animais.html"><img src="./assets/img/Casa.svg" alt="Home"></a></li>
+                    <li class="cabecalho__menu--item"><a href="./mensagem.html"><img src="./assets/img/Mensagens.svg" alt="Mensagens"></a>
+                    </li>
+                    <li class="cabecalho__menu--item" id="perfil"><a href="#"><img src="./assets/img/perfil.jpeg" alt="Perfil"
+                                class="cabecalho__menu--itemUser"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p class="texto__introducao container">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>    
+            <section class="mensagem__form container--cadastro">
+                <h2 class="perfil__titulo">Perfil</h2>
+                <form action="" class="formulario container--mensagem">
+                    <label for="foto" class="formulario__campo" >Foto</label>
+                        <figure class="formulario__fotoperfil">
+                            <img src="./assets/img/perfil.jpeg" alt="" class="formulario__fotoperfil--foto">
+                            <figcaption class="formulario__fotoperfil--legenda">Clique na foto para editar</figcaption>
+                        </figure>
+                    <label for="nome" class="formulario__campo" >Nome</label>
+                    <input type="text" class="formulario__input input" id="nome" placeholder="Insira seu nome completo">
+                    <label for="fone" class="formulario__campo">Telefone</label>
+                    <input type="tel" class="formulario__input input" id="phone" placeholder="55 11 XXXXXXXXX">
+                    <label for="cidade" class="formulario__campo">Cidade</label>
+                    <input type="text" class="formulario__input input" id="cidade" placeholder="Sao Paulo">
+                    <label for="mensagem" class="formulario__campo">Sobre</label>
+                    <textarea class="formulario__textarea" id="mensagem" rows="6" cols="50" placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati."></textarea>
+                    <a href="" class="formulario__botao btn"> Enviar</a>
+                </form>
+            </section>
+        </main>
+        <footer class="rodape">
+            <p>2022 - Desenvolvido por Alura.</p>
+        </footer>
+    
+</body>
+</html>

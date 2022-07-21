@@ -1,0 +1,7 @@
+.galeria{
+    display: grid;
+    grid-gap: 1rem;
+    font-family: var(--Poppins);
+    color: var(--cinza-escuro);
+    margin-bottom: 1.5rem;
+}

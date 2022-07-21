@@ -1,0 +1,9 @@
+.formulario__loggedout--input {
+    background-color: var(--cinza-claro);
+    font-size: 12px;
+    text-align: center;
+}
+
+.formulario__loggedout--input:nth-child(8) {
+    margin-bottom: 0;
+}

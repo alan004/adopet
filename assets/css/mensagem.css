@@ -1,0 +1,11 @@
+.mensagem {
+    font-family: var(--Poppins);
+    color: var(--azul);
+    text-align: center;
+}
+
+.mensagem__form {
+    background-color: var(--cinza-claro);
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}

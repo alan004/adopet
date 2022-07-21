@@ -1,0 +1,32 @@
+.cabecalho__menu--item {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 20%;
+}
+
+.cabecalho__menu--item:last-child{
+    padding-right: 0;
+    padding-left: 5rem;
+}
+
+.cabecalho__menu--item#logout{
+    display: none;
+}
+
+@media screen and (min-width: 0px) {
+ .cabecalho__menu--item:nth-child(1) {
+        display: none;  
+    }
+}
+
+@media screen and (min-width: 728px) {
+  .cabecalho__menu--item:nth-child(1) {
+        display: flex;
+    }
+    .cabecalho__menu--item:nth-child(2) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    
+
+}

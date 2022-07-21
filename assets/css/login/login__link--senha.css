@@ -1,0 +1,5 @@
+.login__senha--link {
+    color: var(--vermelho);
+    font-size: 12px;
+    line-height: 24px;
+}

@@ -1,0 +1,8 @@
+.cadastro__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--Poppins);
+    margin-top: 5rem;
+    margin-bottom: 6.5rem;
+}

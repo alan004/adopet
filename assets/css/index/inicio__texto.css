@@ -1,0 +1,8 @@
+.inicio__texto {
+    text-align: center;
+    font-family: var(--Poppins);
+    font-weight: 400;
+    width: 250px;
+    margin: auto;
+    line-height: 24px;
+}

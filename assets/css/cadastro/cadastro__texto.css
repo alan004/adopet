@@ -1,0 +1,7 @@
+.cadastro__texto {
+        margin-top: 5rem;
+        font-family: var(--Poppins);
+        color: var(--azul);
+        font-weight: 400;
+        max-width: 300px;
+}
