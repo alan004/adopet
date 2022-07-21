@@ -5,20 +5,19 @@
 
 .inicio {
     text-align: center;
-    margin-top: 6rem;
-    color: #FFFF;
-    
+    color: #FFFF;    
 } 
-
 
 @media screen and (min-width: 0px) {
     .inicio {
-        height: 40vh;
+        margin-top: 6rem;
+        height: 60vh;
     }
 }
 
 @media screen and (min-width: 728px) {
     .inicio {
-        height: 50vh;
+        margin-top: 10rem;
+        height: 40vh;
     }
 }

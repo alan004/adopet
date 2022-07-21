@@ -3,3 +3,15 @@
     font-weight: 500;
     font-size: 26px;
 }
+
+@media screen and (min-width: 0px) {
+    .inicio__titulo {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 728px) {
+    .inicio__titulo {
+        font-size: 28px;
+    }
+}
