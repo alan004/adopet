@@ -2,7 +2,7 @@
     background-image: url(../img/Forma-2.svg);
     background-repeat: no-repeat;
     background-position-x: 100%;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     z-index: -2;
     right: 0;
@@ -10,23 +10,31 @@
 } 
 
 .esquerda {
-    transform: scaleX(-1);
-    top: 370px;
-    left: 0;
-    width: 70px;
+    width: 170px;
 }
 
 @media screen and (min-width: 0px) {
     .forma__lateral {
         width: 22%;
         height: 470px;
-        
+        max-width: 25%;
+    }
+    .esquerda {
+        transform: scaleX(-1);
+        top: 370px;
+        left: 0;
     }
 }
 
 @media screen and (min-width: 728px) {
     .forma__lateral {
         width: 7rem;
-        height: 41.5rem;
+        height: 75vh;
+    }
+    .esquerda {
+        transform: scaleX(1);
+        top: 200px;
+        right: 0;
+        left: auto;
     }
 }

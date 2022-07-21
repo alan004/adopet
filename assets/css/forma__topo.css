@@ -1,7 +1,7 @@
 .forma__topo {
     background-image: url(../img/Forma-1.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     z-index: -2;
     top: 0;
@@ -13,14 +13,12 @@
 @media screen and (min-width: 0px) {
     .forma__topo {
         height: 275px;
-        width: 99%;
-        
+        width: 100%;
     }
 }
 
 @media screen and (min-width: 728px) {
     .forma__topo {
         height: 430px;
-        width: calc(100% - 13rem);
     }
 }

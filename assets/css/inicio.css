@@ -7,6 +7,18 @@
     text-align: center;
     margin-top: 6rem;
     color: #FFFF;
-    height: calc(100vh - 15rem);
+    
 } 
 
+
+@media screen and (min-width: 0px) {
+    .inicio {
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 728px) {
+    .inicio {
+        height: 50vh;
+    }
+}

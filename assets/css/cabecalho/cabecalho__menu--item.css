@@ -20,7 +20,7 @@
 }
 
 @media screen and (min-width: 728px) {
-  .cabecalho__menu--item:nth-child(1) {
+  .cabecalho__menu--item#logo {
         display: flex;
     }
     .cabecalho__menu--item:nth-child(2) {
