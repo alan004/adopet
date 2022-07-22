@@ -1,3 +1,15 @@
 .formulario__loggedout--botao {
     margin: 1.5rem 3rem 1.5rem 3rem;
 }
+
+@media screen and (min-width: 0px) {
+    .formulario__loggedout--botao {
+        margin: 1.5rem 3rem 1.5rem 3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .formulario__loggedout--botao   {
+        margin: 2.5rem 8rem 1.5rem 8rem;
+    }
+}

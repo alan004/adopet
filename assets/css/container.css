@@ -2,18 +2,26 @@
     z-index: 2;
 }
 
-.container--cadastro {
-    margin: 0 1.5rem;
-}
-
 @media screen and (min-width: 0px) {
-    .container {
+    .container, .container__cabecalho {
         margin: 0 13%;
+    }
+    .container__cadastro {
+        margin: 0 1.5rem;
     }
 }
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 768px) {
     .container {
         margin: 0 10rem;
+    }
+    .container__cabecalho {
+        margin: 3rem;
+    }
+    .container__cadastro {
+        margin: 0 10rem;
+    }
+    .container__cadastro--texto {
+        margin: 0 6rem;
     }
 }

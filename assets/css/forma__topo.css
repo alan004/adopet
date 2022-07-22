@@ -17,7 +17,7 @@
     }
 }
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 768px) {
     .forma__topo {
         background-size: contain;
         height: 430px;

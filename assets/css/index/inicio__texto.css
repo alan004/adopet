@@ -11,12 +11,21 @@
         width: 250px;
         line-height: 24px;
     }
+    .inicio__texto#tablet{
+        display: none;
+    }
 }
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 768px) {
     .inicio__texto {
-        width: 340px;
+        width: 350px;
         font-size: 18px;
         line-height: 26px;
+    }
+    .inicio__texto#mobile{
+        display: none;
+    }
+    .inicio__texto#tablet{
+        display: flex;
     }
 }

@@ -26,14 +26,14 @@
     }
 }
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 768px) {
     .forma__lateral {
-        width: 7rem;
+        width: 7.5rem;
         height: 75vh;
     }
     .esquerda {
         transform: scaleX(1);
-        top: 200px;
+        top: 250px;
         right: 0;
         left: auto;
     }

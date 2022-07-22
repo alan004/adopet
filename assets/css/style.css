@@ -45,6 +45,7 @@
 
 /* pagina cadastro*/
 @import url(./cadastro.css);
+@import url(./cadastro/cadastro__conteudo.css);
 @import url(./cadastro/cadastro__texto.css);
 @import url(./cadastro/cadastro__texto--paragrafo.css);
 @import url(./cadastro/cadastro__formulario.css);
