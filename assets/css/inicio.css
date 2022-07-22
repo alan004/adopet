@@ -21,3 +21,10 @@
         height: 40vh;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .inicio {
+        height: calc(100vh - 40rem );
+        margin-top: 2.5rem;
+    }
+}

@@ -3,22 +3,3 @@
     color: var(--azul);
     text-align: center;
 }
-
-.mensagem__form {
-    background-color: var(--cinza-claro);
-    border-radius: 10px;
-    margin-top: 1.5rem;
-}
-
-@media screen and (min-width: 0px) {
-    .mensagem__form {
-        margin: 1.5rem;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .mensagem__form  {
-        margin: 3.5rem 7rem;
-        margin-bottom: 7rem;
-    }
-}

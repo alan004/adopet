@@ -57,10 +57,13 @@
 @import url(./login/login__texto.css);
 @import url(./login/login__link--senha.css);
 
+/*mensagem*/
+@import url(./conteudo/conteudo__mensagem.css);
+@import url(./mensagem/mensagem__form.css);
+
 /* pagina animais */
 @import url(./galeria.css);
 @import url(./animais/animal.css);
-@import url(./animais/animais__introducao.css);
 @import url(./animais/animal__imagem.css);
 @import url(./animais/animal__descricao.css);
 @import url(./animais/animal__nome.css);

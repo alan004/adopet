@@ -19,3 +19,9 @@
         justify-content: space-between;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .galeria {
+        margin: 0 10rem;
+    }
+}

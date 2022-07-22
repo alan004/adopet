@@ -9,3 +9,8 @@
         max-width: 340px;
     }
 }
+@media screen and (min-width: 1440px) {
+    .ilustracao__imagem{
+        max-width: 350px;
+    }
+}

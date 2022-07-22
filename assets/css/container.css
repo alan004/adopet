@@ -25,3 +25,12 @@
         margin: 0 6rem;
     }
 }
+
+@media screen and (min-width: 1440px){
+    .container__cabecalho {
+        margin: 0 10rem;
+    }
+    .container__cadastro {
+        margin: 0 26rem;
+    }
+}

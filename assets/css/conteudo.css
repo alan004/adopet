@@ -9,3 +9,9 @@
         height: 73vh;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .conteudo {
+        height: calc(100vh - 14rem );
+    }
+}

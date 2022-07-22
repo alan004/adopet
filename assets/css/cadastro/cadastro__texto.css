@@ -10,9 +10,16 @@
         }
     }
     
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
         .cadastro__texto  {
-                margin-top: 10rem;
-                font-size: 18px;
+             margin-top: 10rem;
+             font-size: 18px;
         }
     }
+
+    @media screen and (min-width: 1440px) {
+        .cadastro__texto  {
+                margin-top: 2.5rem;
+        }
+    }
+  
