@@ -30,7 +30,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
     .texto__introducao{
        width: 35%; 
        margin: 10rem auto 2.5rem;

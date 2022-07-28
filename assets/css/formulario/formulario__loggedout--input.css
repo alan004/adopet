@@ -19,7 +19,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
     .formulario__loggedout--input#senha,.formulario__loggedout--input#confirmaSenha{
         margin: .5rem 8rem;
     }

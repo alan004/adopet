@@ -17,7 +17,7 @@
         }
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1280px) {
         .cadastro__texto  {
                 margin-top: 2.5rem;
         }

@@ -34,7 +34,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
 
       .cabecalho__menu--item:nth-child(2) {
           padding-left: 0rem;
