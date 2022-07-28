@@ -24,7 +24,7 @@
 
 @media screen and (min-width: 1280px) {
     .inicio {
-        height: calc(100vh - 40rem );
+        height: calc(100vh - 17rem );
         margin-top: 2.5rem;
     }
 }
