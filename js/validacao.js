@@ -30,6 +30,10 @@ const mensagensDeErro = {
     senha: {
         valueMissing: 'O campo senha não pode estar vazio',
         patternMismatch: 'A senha deve conter 8 a 12 caracteres, um dígito e uma letra maiúscula.'
+    },
+    telefone: {
+        valueMissing: 'O campo telefone não pode estar vazio',
+        patternMismatch: 'Digite um telefone válido'
     }
 }
 

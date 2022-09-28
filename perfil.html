@@ -34,10 +34,17 @@
                             <img src="./assets/img/perfil.jpeg" alt="" class="formulario__fotoperfil--foto">
                             <figcaption class="formulario__fotoperfil--legenda">Clique na foto para editar</figcaption>
                         </figure>
+                    
+                    <div class="input-container">
                     <label for="nome" class="formulario__campo" >Nome</label>
-                    <input type="text" class="formulario__input input" id="nome" placeholder="Insira seu nome completo">
+                    <input type="text" data-type="nome" class="formulario__input input" id="nome" placeholder="Insira seu nome completo" required>
+                    <span class="input-mensagem-erro">Campo invalido</span>
+                   </div>
+                    <div class="input-container">
                     <label for="fone" class="formulario__campo">Telefone</label>
-                    <input type="tel" class="formulario__input input" id="phone" placeholder="55 11 XXXXXXXXX">
+                    <input type="tel" data-type="telefone" class="formulario__input input" id="phone" placeholder="55 11 XXXXXXXXX" pattern="^\s*(\d{2}|\d{0})[-. ]?(\d{5}|\d{4})[-. ]?(\d{4})[-. ]?\s*$" required>
+                    <span class="input-mensagem-erro">Campo invalido</span>
+                    </div>
                     <label for="cidade" class="formulario__campo">Cidade</label>
                     <input type="text" class="formulario__input input" id="cidade" placeholder="Sao Paulo">
                     <label for="mensagem" class="formulario__campo">Sobre</label>
@@ -49,6 +56,6 @@
         <footer class="rodape">
             <p>2022 - Desenvolvido por Alura.</p>
         </footer>
-    
+    <script src="./js/app.js" type="module"></script>
 </body>
 </html>
