@@ -15,3 +15,18 @@
     background-position-y: center;
     background-origin: content-box;
 }
+
+.input-mensagem-erro {
+    display: none;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; 
+}
+
+.input-container--invalido .input-mensagem-erro {
+    display: flex;
+    flex-direction: column;
+    color: red;
+}
