@@ -30,10 +30,16 @@
         </section>
         <section>
             <form action="" class="login__formulario container__cadastro" name="login">
-                <label for="" class="formulario__loggedout--campo">Email</label>
-                <input type="text" class="formulario__loggedout--input input" name="email" placeholder="Insira seu email">
-                <label for="" class="formulario__loggedout--campo">Senha</label>
-                <input type="password" class="formulario__loggedout--input input" id="senha" placeholder="Insira senha">
+                <div class="input-container">
+                <label for="email" class="formulario__loggedout--campo">Email</label>
+                <input type="email" data-type="email" pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$"  class="formulario__loggedout--input input" name="email" placeholder="Insira seu email" required>
+                <span class="input-mensagem-erro">Campo invalido</span>
+            </div>
+                <div class="input-container">
+                <label for="senha" class="formulario__loggedout--campo">Senha</label>
+                <input type="password" data-type="senha" class="formulario__loggedout--input input" id="senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$" placeholder="Insira senha" required>
+                <span class="input-mensagem-erro">Campo invalido</span>
+            </div>
                 <a href="" class="login__senha--link">Esqueci minha senha</a>
                 <a href="" class="formulario__loggedout--botao btn">Entrar</a>
             </form>
@@ -42,7 +48,7 @@
     <footer class="rodape">
         <p>2022 - Desenvolvido por Alura.</p>
     </footer>
-<script src="./scripts/validaEmail.js"></script>
+<script src="./js/app.js" type="module"></script>
 </body>
 
 </html>
