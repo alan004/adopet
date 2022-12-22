@@ -1,6 +1,6 @@
 # Adopet
 
-Rápida descrição do objetivo de fazer esse projeto
+Projeto feito para a challenge front-end. Achei legal o desafio e quis testar meus conhecimentos.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
