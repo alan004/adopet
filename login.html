@@ -29,10 +29,10 @@
             <p class="login__texto">Já tem conta? Faça seu login:</p>
         </section>
         <section>
-            <form action="" class="login__formulario container__cadastro" name="login">
+            <form class="login__formulario container__cadastro" name="login">
                 <div class="input-container">
                 <label for="email" class="formulario__loggedout--campo">Email</label>
-                <input type="email" data-type="email" pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$"  class="formulario__loggedout--input input" name="email" placeholder="Insira seu email" required>
+                <input type="email" data-type="email" pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$"  class="formulario__loggedout--input input" id="email" name="email" placeholder="Insira seu email" required>
                 <span class="input-mensagem-erro">Campo invalido</span>
             </div>
                 <div class="input-container">
@@ -41,14 +41,14 @@
                 <span class="input-mensagem-erro">Campo invalido</span>
             </div>
                 <a href="" class="login__senha--link">Esqueci minha senha</a>
-                <a href="" class="formulario__loggedout--botao btn">Entrar</a>
+                <input type="button" value="Enviar" id="btnSubmit" class="formulario__loggedout--botao btn"></input>
             </form>
         </section>
     </main> 
     <footer class="rodape">
         <p>2022 - Desenvolvido por Alura.</p>
     </footer>
-<script src="./js/app.js" type="module"></script>
+<script src="./app.js" type="module"></script>
 </body>
 
 </html>
