@@ -7,6 +7,6 @@ export function criarUsuario (nome, email, senha){
     const newUser = new Usuario(nome, email, senha)
     usuarios.push(newUser)
     localStorage.setItem("usuarios", JSON.stringify(usuarios))   
-    alert("Usuario cadastrado!") 
+    //alert("Usuario cadastrado!") 
     window.location.href = "../../login.html"
   }
