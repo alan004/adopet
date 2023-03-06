@@ -14,4 +14,4 @@ Projeto feito para a challenge front-end. Achei legal o desafio e quis testar me
 
 ## Detalhes do projeto
 
-> Status do Projeto: Em desenvolvimento :warning:
+> Status do Projeto: Em desenvolvimento  :warning:
