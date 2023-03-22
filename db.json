@@ -1,10 +1,22 @@
 {
-    "profile": [
-      {
-        "nome": "Alan",
-        "email": "Alan.abilio",
-        "senha": "1234",
-        "id": 1
-      }
-    ]
-  }
+  "Usuario": [
+    {
+      "nome": "Alan",
+      "email": "alan.abilio@gmail.com",
+      "senha": "Senha1234!",
+      "id": 1
+    },
+    {
+      "nome": "Raquel",
+      "email": "raquel@gmail.com",
+      "senha": "Senha@123",
+      "id": 2
+    },
+    {
+      "nome": "Leo",
+      "email": "leo@gmail.com",
+      "senha": "Senha@123",
+      "id": 3
+    }
+  ]
+}

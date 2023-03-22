@@ -37,7 +37,7 @@
             </p>
         </section>
         <section>
-            <form class="cadastro__formulario container__cadastro">
+            <form data-formCadastro class="cadastro__formulario container__cadastro">
                 <div class="input-container">
                     <label for="nome" class="formulario__loggedout--campo">Nome</label>
                     <input type="text" data-type="nome" class="formulario__loggedout--input input" id="nome"
@@ -64,7 +64,7 @@
                         placeholder="Repita a senha" required>
                     <span class="input-mensagem-erro">Campo invalido</span>
                 </div>
-                <input type="button" value="Cadastrar" id="btnSubmit" class="formulario__loggedout--botao btn"></input>
+                <button type="submit" value="Cadastrar" id="btnSubmit" class="formulario__loggedout--botao btn">Cadastrar</button>
             </form>
         </section>
     </main>
@@ -72,6 +72,7 @@
         <p>2022 - Desenvolvido por Alura.</p>
     </footer>
     <script src="./app.js" type="module"></script>
+    <script src="./js/Usuario/criarUsuario.js" type="module"></script>
 </body>
 
 </html>

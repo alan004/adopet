@@ -1,20 +1,21 @@
 import {validaCampo} from "./js/validacao.js";
-import { criarUsuario } from "./js/Usuario/criarUsuario.js";
-import { logar } from "./js/Usuario/logar.js";
+import { clientService } from "./controllerLogin.js";
+// import { criarUsuario } from "./js/Usuario/criarUsuario.js";
+// import { logar } from "./js/Usuario/logar.js";
 
 //cria array de usuarios
 export const usuarios = JSON.parse(localStorage.getItem("usuarios")) || []
 
 //define a função do submit
-let btnSubmit = document.getElementById("btnSubmit");
-btnSubmit.addEventListener('click', event => {
-    if (window.location.pathname == '/cadastro.html'){
-        criarUsuario();
-    }
-    else {
-        logar();
-    }
-});
+// let btnSubmit = document.getElementById("btnSubmit");
+// btnSubmit.addEventListener('click', event => {
+//     if (window.location.pathname == '/cadastro.html'){
+//         criarUsuario();
+//     }
+//     else {
+//         logar();
+//     }
+// });
 
 
 //valida formulario
@@ -25,3 +26,10 @@ inputs.forEach(input => {
         validaCampo(evento.target)
     })
 })
+
+// const usuariosResultado = clientService.logarUsuario()
+// usuariosResultado.then((dados)=>{
+//     console.log(dados);
+// }
+//    )
+//console.log(clientService.logarUsuario())
