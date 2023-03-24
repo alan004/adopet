@@ -9,7 +9,7 @@ const preencheDados = (nome, telefone) => {
     const conteudo = `<label for="nome" class="formulario__campo" >Nome</label>
 <input data-nome type="text" class="formulario__input input" id="nome" placeholder="Insira seu nome completo" value="${nome}">
 <label for="fone" class="formulario__campo">Telefone</label>
-<input data-telefone type="tel" class="formulario__input input" id="phone" placeholder="Insira seu telefone e/ou whatsapp" value="${telefone}">
+<input data-telefone type="tel" class="formulario__input input" id="phone" placeholder="Insira seu telefone e/ou whatsapp" value="${telefone ? telefone : '' }">
 <label for="nomeAnimal" class="formulario__campo">Nome do animal</label>
 <input data-animal type="text" class="formulario__input input" id="nomeAnimal" placeholder="Por qual animal você se interessou?">
 <label for="mensagem" class="formulario__campo">Mensagem</label>
