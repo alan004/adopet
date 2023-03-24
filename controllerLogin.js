@@ -1,5 +1,5 @@
-const listarUsuario = () => {
-    return fetch('http://localhost:3000/Usuario')
+const perfilUsuario = (id) => {
+    return fetch(`http://localhost:3000/Usuario/${id}`)
     .then(e=> {
         if(e.ok){
             return e.json()
@@ -9,7 +9,7 @@ const listarUsuario = () => {
 }
 
 const criarUsuario = (nome, email, senha) =>{
-    return fetch('http://localhost:3000/Usuario',{
+    return fetch(`http://localhost:3000/Usuario`,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ const criarUsuario = (nome, email, senha) =>{
 }
 
 const logarUsuario = ()=>{
-    return fetch('http://localhost:3000/Usuario')
+    return fetch(`http://localhost:3000/Usuario`)
      .then(e=> {
         if(e.ok){
             return e.json()
@@ -40,8 +40,31 @@ const logarUsuario = ()=>{
 
 }
 
+const atualizarUsuario = (id, nome, telefone,) => {
+    const body = {
+        nome: nome,
+        telefone: telefone
+    }
+    return fetch(`http://localhost:3000/Usuario/${id}`, {
+        method: 'PUT',
+        headers: {
+        'Content-Type': 'application/json'
+    },
+        body: JSON.stringify(body)
+})
+.then(e=>{
+    if(e.ok){
+        return e.json()
+    }
+    throw new Error('Nao foi possível atualizar o Usuario')
+})
+}
+
+
+
 export const clientService = {
-    listarUsuario,
+    perfilUsuario,
     criarUsuario,
-    logarUsuario
+    logarUsuario,
+    atualizarUsuario
 }
