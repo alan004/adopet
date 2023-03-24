@@ -9,7 +9,6 @@ try{
     await resultadoUsuarios.then((dados)=>{
         for (let index = 0; index < dados.length; index++) {
             if (dados[index].email == email && dados[index].senha == senha) {
-                alert("Usuário encontrado!")
                 let id = dados[index].id
                 window.location.href = "../../perfil.html?id=" + id 
                 break

@@ -40,31 +40,32 @@ const logarUsuario = ()=>{
 
 }
 
-const atualizarUsuario = (id, nome, telefone,) => {
-    const body = {
-        nome: nome,
-        telefone: telefone
-    }
-    return fetch(`http://localhost:3000/Usuario/${id}`, {
-        method: 'PUT',
-        headers: {
-        'Content-Type': 'application/json'
-    },
-        body: JSON.stringify(body)
-})
-.then(e=>{
-    if(e.ok){
-        return e.json()
-    }
-    throw new Error('Nao foi possível atualizar o Usuario')
-})
-}
 
+async function lerUsuario(id) {
+    const response = await fetch(`db.json`)
+    const data = await response.json()
+    const usuario = data.Usuario.find(e => e.id === Number(id))
+    return usuario
+  }
+  
 
+  async function atualizarUsuario(usuario) {
+    const response = await fetch(`http://localhost:3000/Usuario/${usuario.id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(usuario),
+    })
+    if (!response.ok) {
+      throw new Error('Não foi possível atualizar o usuário.')
+    }
+  }
 
 export const clientService = {
     perfilUsuario,
     criarUsuario,
     logarUsuario,
+    lerUsuario,
     atualizarUsuario
 }

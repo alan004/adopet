@@ -13,7 +13,7 @@ const mostraDados = (nome, telefone, cidade, sobre) => {
     const perfil = document.createElement(`div`)
     const conteudo = `<label for="foto" class="formulario__campo" >Foto</label>
 <figure class="formulario__fotoperfil">
-    <img src="./assets/img/perfil.jpeg" alt="" class="formulario__fotoperfil--foto">
+    <img src="./assets/img/user.png" alt="" class="formulario__fotoperfil--foto">
     <figcaption class="formulario__fotoperfil--legenda">Clique na foto para editar</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ const mostraDados = (nome, telefone, cidade, sobre) => {
 <label for="cidade" class="formulario__campo">Cidade</label>
 <input data-type="cidade" type="text" class="formulario__input input" id="cidade" placeholder="Sao Paulo" value="${cidade ? cidade : ''}">
 <label for="mensagem" class="formulario__campo">Sobre</label>
-<textarea data-type="sobre" class="formulario__textarea" id="mensagem" rows="6" cols="50" placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." value="${sobre ? sobre : ''}"></textarea>`
+<textarea data-type="sobre" class="formulario__textarea" id="mensagem" rows="6" cols="50" placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.">${sobre ? sobre: ''}</textarea>`
     perfil.innerHTML = conteudo
     return perfil
 }
@@ -45,7 +45,7 @@ const exibeDados = async () => {
         const dados = Array.isArray(exibePerfil) ? exibePerfil : [exibePerfil];
         const botaoExistente = formulario.firstChild
         dados.find(e => {
-            formulario.insertBefore((mostraDados(e.nome)), botaoExistente)
+            formulario.insertBefore((mostraDados(e.nome, e.telefone, e.cidade, e.sobre)), botaoExistente)
         })
     }
     catch (erro) {
