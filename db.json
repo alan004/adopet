@@ -20,6 +20,12 @@
       "email": "leo@gmail.com",
       "senha": "Senha@123",
       "id": 3
+    },
+    {
+      "nome": "Breno",
+      "email": "breno@gmail.com",
+      "senha": "Senha1234!",
+      "id": 4
     }
   ]
 }

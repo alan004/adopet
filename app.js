@@ -10,9 +10,6 @@ inputs.forEach(input => {
 })
 
 
-
-
-//Gerencia tempo de sessão
 //recupera id do cookie
 const cookies = document.cookie.split(';')
 const idCookie = cookies.find(cookie => cookie.trim().startsWith('id='))

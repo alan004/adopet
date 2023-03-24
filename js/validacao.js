@@ -29,7 +29,8 @@ const mensagensDeErro = {
     },
     senha: {
         valueMissing: 'O campo senha não pode estar vazio',
-        patternMismatch: 'A senha deve conter 8 a 12 caracteres, um dígito e uma letra maiúscula.'
+        patternMismatch: 'A senha deve conter 8 a 12 caracteres, um dígito e uma letra maiúscula.',
+        customError: "As senhas não são iguais. Tente novamente."
     },
     telefone: {
         valueMissing: 'O campo telefone não pode estar vazio',
@@ -47,3 +48,15 @@ function mostraMensagemDeErro(tipoDeInput, input) {
 
     return mensagem
 }
+
+var senha = document.getElementById("senha"), confirmaSenha = document.getElementById("confirmaSenha");
+
+function validasenha() {
+    if (senha.value != confirmaSenha.value) {
+        confirmaSenha.setCustomValidity("Senhas diferentes!");
+    } else {
+        confirmaSenha.setCustomValidity('');
+    }
+}
+senha.onchange = validasenha;
+confirmaSenha.onkeyup = validasenha;
