@@ -49,14 +49,16 @@ function mostraMensagemDeErro(tipoDeInput, input) {
     return mensagem
 }
 
-var senha = document.getElementById("senha"), confirmaSenha = document.getElementById("confirmaSenha");
+var senha = document.getElementById("senha"), confirmaSenha = document.getElementById("confirmaSenha")
 
 function validasenha() {
     if (senha.value != confirmaSenha.value) {
-        confirmaSenha.setCustomValidity("Senhas diferentes!");
+        confirmaSenha.setCustomValidity("Senhas diferentes!")
     } else {
-        confirmaSenha.setCustomValidity('');
+        confirmaSenha.setCustomValidity('')
     }
 }
-senha.onchange = validasenha;
-confirmaSenha.onkeyup = validasenha;
+if (window.location.pathname.split('/')[1] === 'cadastro.html') {
+    senha.onchange = validasenha
+    confirmaSenha.onkeyup = validasenha
+}
