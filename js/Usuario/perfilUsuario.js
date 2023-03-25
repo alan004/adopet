@@ -9,6 +9,7 @@ const defineIdGeral = () => {
 }
 defineIdGeral()
 
+//cria o formulario preenchido com dados do usuário
 const mostraDados = (nome, telefone, cidade, sobre) => {
     const perfil = document.createElement(`div`)
     const conteudo = `<label for="foto" class="formulario__campo" >Foto</label>
@@ -35,17 +36,19 @@ const mostraDados = (nome, telefone, cidade, sobre) => {
     return perfil
 }
 
-const formulario = document.querySelector('[data-formPerfil]')
+//pega o id da página
 const pegaUrl = new URL(window.location)
 const id = pegaUrl.searchParams.get('id')
 
+//consulta o clientService e exibe os dados
+const formulario = document.querySelector('[data-formPerfil]')
 const exibeDados = async () => {
     try {
-        const exibePerfil = await clientService.perfilUsuario(id)
-        const dados = Array.isArray(exibePerfil) ? exibePerfil : [exibePerfil];
-        const botaoExistente = formulario.firstChild
+        const exibePerfil = await clientService.perfilUsuario(id) //consulta o clientService
+        const dados = Array.isArray(exibePerfil) ? exibePerfil : [exibePerfil]; //transforma o objeto consultado em Array
+        const botaoExistente = formulario.firstChild //encontra o botão de submit na página
         dados.find(e => {
-            formulario.insertBefore((mostraDados(e.nome, e.telefone, e.cidade, e.sobre)), botaoExistente)
+            formulario.insertBefore((mostraDados(e.nome, e.telefone, e.cidade, e.sobre)), botaoExistente)//insere a função mostraDados antes do botão submit
         })
     }
     catch (erro) {

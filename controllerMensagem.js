@@ -1,3 +1,4 @@
+//envia a mensagem para o DB
 const enviarMensagem = (nome, telefone, animal, mensagem) => {
     return fetch(`http://localhost:3005/Mensagens`, {
         method: 'POST',
@@ -20,6 +21,7 @@ const enviarMensagem = (nome, telefone, animal, mensagem) => {
         )
 }
 
+//exporta as funções da API relacionadas a mensagem
 export const mensagemService = {
     enviarMensagem
 }

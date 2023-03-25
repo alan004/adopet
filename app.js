@@ -10,7 +10,7 @@ inputs.forEach(input => {
 })
 
 
-//recupera id do cookie
+//recupera id do cookie com id do usuario
 const cookies = document.cookie.split(';')
 const idCookie = cookies.find(cookie => cookie.trim().startsWith('id='))
 const id = idCookie ? idCookie.split('=')[1] : null

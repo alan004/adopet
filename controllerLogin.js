@@ -1,3 +1,4 @@
+//consulta o usario de acordo com o ID da página
 const perfilUsuario = (id) => {
     return fetch(`http://localhost:3000/Usuario/${id}`)
     .then(e=> {
@@ -8,6 +9,7 @@ const perfilUsuario = (id) => {
     })
 }
 
+//insere novo usuario no DB
 const criarUsuario = (nome, email, senha) =>{
     return fetch(`http://localhost:3000/Usuario`,{
         method: 'POST',
@@ -29,6 +31,7 @@ const criarUsuario = (nome, email, senha) =>{
 
 }
 
+//consulta usuarios para realizar a validação de login
 const logarUsuario = ()=>{
     return fetch(`http://localhost:3000/Usuario`)
      .then(e=> {
@@ -40,7 +43,7 @@ const logarUsuario = ()=>{
 
 }
 
-
+//retorna o usuario de acordo com ID
 async function lerUsuario(id) {
     const response = await fetch(`db.json`)
     const data = await response.json()
@@ -48,7 +51,7 @@ async function lerUsuario(id) {
     return usuario
   }
   
-
+//atualiza o usuário já existente
   async function atualizarUsuario(usuario) {
     const response = await fetch(`http://localhost:3000/Usuario/${usuario.id}`, {
       method: 'PUT',
@@ -62,6 +65,7 @@ async function lerUsuario(id) {
     }
   }
 
+//exporta as funções criadas
 export const clientService = {
     perfilUsuario,
     criarUsuario,

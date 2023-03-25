@@ -1,3 +1,4 @@
+//valida o campo e exibe a mensagem de erro quando o campo for inválido
 export function validaCampo(input){
     const tipoInput = input.dataset.type
 
@@ -11,6 +12,7 @@ export function validaCampo(input){
     }
 }
 
+//array  com os tipos possíveis de erro
 const tiposDeErro = [
     'valueMissing',
     'tipeMismatch',
@@ -18,7 +20,7 @@ const tiposDeErro = [
     'customError'
 ]
 
-
+//personaliza as mensagens de erro
 const mensagensDeErro = {
     nome: {
         valueMissing: 'O campo nome não pode estar vazio'
@@ -38,6 +40,7 @@ const mensagensDeErro = {
     }
 }
 
+//exibe as mensagens de erro
 function mostraMensagemDeErro(tipoDeInput, input) {
     let mensagem = ''
     tiposDeErro.forEach(erro => {
@@ -49,7 +52,9 @@ function mostraMensagemDeErro(tipoDeInput, input) {
     return mensagem
 }
 
-var senha = document.getElementById("senha"), confirmaSenha = document.getElementById("confirmaSenha")
+//comparar campos Senha e Confirma senha
+var senha = document.getElementById("senha")
+var confirmaSenha = document.getElementById("confirmaSenha")
 
 function validasenha() {
     if (senha.value != confirmaSenha.value) {
@@ -58,7 +63,7 @@ function validasenha() {
         confirmaSenha.setCustomValidity('')
     }
 }
-if (window.location.pathname.split('/')[1] === 'cadastro.html') {
+if (window.location.pathname.split('/')[1] === 'cadastro.html') { //if necesário para que a validação ocorra somente na página de cadastro
     senha.onchange = validasenha
     confirmaSenha.onkeyup = validasenha
 }

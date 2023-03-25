@@ -1,9 +1,11 @@
 import { clientService } from "../../controllerLogin.js";
 import { mensagemService } from "../../controllerMensagem.js";
 
+//pega o id do usuario atual
 const pegaUrl = new URL(window.location)
 const id = pegaUrl.searchParams.get('id')
 
+//insere o formulario com dados preenchidos
 const preencheDados = (nome, telefone) => {
     const mensagem = document.createElement(`div`)
     const conteudo = `<label for="nome" class="formulario__campo" >Nome</label>
@@ -17,7 +19,7 @@ const preencheDados = (nome, telefone) => {
 mensagem.innerHTML = conteudo
 return mensagem
 }
-
+//exibe os dados atuais e cria o formulario
 const formulario = document.querySelector('[data-formMensagem]')
 const exibeDados = async () => {
     try {
@@ -35,6 +37,7 @@ const exibeDados = async () => {
 }
 exibeDados()
 
+//envia a mensagem para o db
 formulario.addEventListener('submit', async(e)=>{
     const nome = e.target.querySelector('[data-nome]').value
     const telefone = e.target.querySelector('[data-telefone]').value

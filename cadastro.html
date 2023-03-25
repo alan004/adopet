@@ -12,10 +12,13 @@
 </head>
 
 <body class="cadastro">
+    <!-- cabecalho -->
     <header>
+        <!-- formas do background -->
         <div class="forma__topo"></div>
         <div class="forma__lateral esquerda"></div>
         <div class="patas"></div>
+        <!-- menu -->
         <nav class="cabecalho container__cabecalho">
             <ul class="cabecalho__menu">
                 <li class="cabecalho__menu--item menu--logo" id="logo"></li>
@@ -28,21 +31,23 @@
             </ul>
         </nav>
     </header>
-
     <main class="conteudo">
+        <!-- paragrafo inicial -->
         <section class="cadastro__texto container__cadastro">
             <img src="./assets/img/Logo Azul.svg" alt="" class="cadastro__logo">
             <p class="cadastro__texto--paragrafo">Ainda não tem cadastro?</p>
             <p class="cadastro__texto--paragrafo">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:
             </p>
         </section>
+        <!-- formulario de cadastro -->
         <section>
             <form data-formCadastro class="cadastro__formulario container__cadastro">
                 <div class="input-container">
                     <label for="nome" class="formulario__loggedout--campo">Nome</label>
                     <input type="text" data-type="nome" class="formulario__loggedout--input input" id="nome"
                         placeholder="Digite seu nome completo" required>
-                    <span class="input-mensagem-erro">Campo invalido</span>
+                        <!-- todos inputs do site recebem esse span abaixo para exibição de mensagem de erro -->
+                    <span class="input-mensagem-erro">Campo invalido</span> 
                 </div>
                 <div class="input-container">
                     <label for="email" class="formulario__loggedout--campo">Email</label>
@@ -68,8 +73,9 @@
             </form>
         </section>
     </main>
+    <!-- rodape -->
     <footer class="rodape">
-        <p>2022 - Desenvolvido por Alura.</p>
+        <p>2023 - Desenvolvido por Alan Abilio.</p>
     </footer>
     <script src="./app.js" type="module"></script>
     <script src="./js/Usuario/criarUsuario.js" type="module"></script>
