@@ -1,6 +1,6 @@
 # Adopet
 
-Projeto feito para o challenge front-end, todo o código foi criado do zero. Sem dúvida a parte mais desafiadora foi o Javascript, que até consegui desenvolver bem nesse projeto. Deixo os detalhe mais abaixo.\
+Projeto feito para o challenge front-end, todo o código foi criado do zero. Sem dúvida a parte mais desafiadora foi o Javascript, que consegui desenvolver bem nesse projeto. Deixo os detalhe mais abaixo.
 > Para conseguir logar e utilizar demais páginas, siga as instruções em [Como rodar o projeto](como-rodar-o-projeto)
 
 >Caso queira apenas dar uma olhada, utilize a página [Adopet no Github Pages](https://alan004.github.io/adopet/index.html) e verifique as demais páginas em [Telas do projeto](telas-e-responsividade)
