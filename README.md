@@ -3,7 +3,7 @@
 Projeto feito para o challenge front-end, todo o código foi criado do zero. Sem dúvida a parte mais desafiadora foi o Javascript, que consegui desenvolver bem nesse projeto. Deixo os detalhes mais abaixo.
 > Para conseguir logar e utilizar demais páginas, siga as instruções em [Como rodar o projeto](#como-rodar-o-projeto)
 
-> Caso queira apenas dar uma olhada, utilize a página [Adopet no Github Pages](https://alan004.github.io/adopet/index.html) e verifique as demais páginas em [Telas e responsividade](#telas-e-responsividade)
+> Caso queira apenas dar uma olhada, utilize a página [Adopet no Github Pages](https://alan004.github.io/adopet/index.html) e verifique as demais páginas em [Telas e responsividade](#telas-e-responsividade). Se preferir, você pode assistir ao [vídeo de demonstração](https://www.youtube.com/watch?v=80T_j2Zan9A) que mostra os detalhes do projeto.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
